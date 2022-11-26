@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+
 :root {
 	/* screen sizes */
 	--desktop-size: 1440px;
@@ -7,16 +10,16 @@
 	/* colors */
 	--dark-violet: hsl(256, 26%, 20%);
 	--grayish-blue: hsl(216, 30%, 68%);
-	--very-dark-violet: hsl(270, 9%, 17%);
+	--darker-violet: hsl(270, 9%, 17%);
 	--dark-grayish-violet: hsl(273, 4%, 51%);
-	--very-light-gray: hsl(0, 0%, 98%);
+	--light-gray: hsl(0, 0%, 98%);
 
 	/* fonts sizes*/
 	--base-font-size: 16px;
 
 	/* font family */
-	--dm-serif-display: 'https://fonts.google.com/specimen/DM+Serif+Display';
-	--karla: 'https://fonts.google.com/specimen/Karla';
+	--dm-serif-display-fonts: 'DM Serif Display', serif;
+	--karla-fonts: 'Karla', sans-serif;
 }
 
 /* resets */
@@ -42,11 +45,85 @@ a {
 }
 
 body {
-	font-family: var(--karla);
+	font-family: var(--karla-fonts);
 }
 
-/* utility classes */
+/* --------- utility classes -------- */
 .container {
 	max-width: var(--desktop-size);
 	margin: auto;
+}
+
+.btn {
+	padding: 0.5rem 1rem;
+	text-transform: uppercase;
+}
+
+.btn-dark {
+	outline: 1px solid var(--darker-violet);
+	background: var(--light-gray);
+	color: var(--darker-violet);
+}
+
+.btn-dark:hover {
+	background: var(--darker-violet);
+	color: var(--light-gray) !important;
+}
+
+.btn-light {
+	outline: 1px solid var(--light-gray);
+	color: var(--light-gray) !important;
+}
+
+.btn-light:hover {
+	background: var(--light-gray);
+	color: var(--darker-violet) !important;
+}
+
+/* ------------- header ------------- */
+header {
+	width: 100%;
+	height: 70px;
+	background: #fff;
+}
+
+/* ------------- navbar ------------- */
+.nav {
+	height: inherit;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
+
+/* ----------- navbar logo ----------- */
+.nav .nav--logo img {
+	width: 100px;
+}
+
+/* ----------- navbar links ---------- */
+.nav .nav--links {
+	display: flex;
+	gap: 2rem;
+}
+
+.nav--links .nav--link {
+	color: var(--dark-grayish-violet);
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.nav--links .nav--link:hover {
+	color: var(--darker-violet);
+}
+
+/* ---------- attribution ---------- */
+.attribution {
+	padding: 1rem;
+}
+
+.attribution a {
+	color: var(--grayish-blue);
+	text-decoration: underline;
 }
