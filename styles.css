@@ -149,7 +149,8 @@ header {
 	position: relative;
 }
 
-.section-one .title {
+.section-one .title,
+.section-two .title {
 	padding-bottom: 1rem;
 	font-size: 3rem;
 	font-family: var(--dm-serif-display-fonts);
@@ -171,6 +172,29 @@ header {
 
 .section-one .btn {
 	z-index: 9;
+}
+
+.section-two {
+	margin-top: 7rem;
+	background-color: #fff;
+}
+
+.section-two .services {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+	padding: 3rem 0;
+}
+
+.section-two .service {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.section-two .service .icon {
+	width: 86px;
+	height: 86px;
 }
 
 /* ---------- attribution ---------- */
