@@ -144,15 +144,14 @@ header {
 }
 
 /* ------------ sections ----------- */
-.sections {
-	position: relative;
-}
-
 .section-one {
 	background: var(--dark-violet);
 	color: #fff;
-	padding: 5rem 0;
-	position: relative;
+	padding: 5rem;
+}
+
+.section-one .container {
+	padding: 1rem;
 }
 
 .section-one .title,
@@ -169,19 +168,12 @@ header {
 	padding-bottom: 2rem;
 }
 
-.section-one .image {
-	max-width: 500px;
-	position: absolute;
-	top: 7rem;
-	right: 250px;
-	z-index: 10;
-}
-
 .section-one .btn {
 	z-index: 9;
 }
 
 .section-two {
+	padding: 1rem;
 	margin-top: 7rem;
 	background-color: #fff;
 }
@@ -284,6 +276,57 @@ footer {
 	color: var(--dark-violet);
 	text-transform: uppercase;
 	font-weight: bold;
+}
+
+/* ------------ patterns and family image ------------ */
+main,
+footer,
+.section-one .container,
+.section-three .container {
+	position: relative;
+	overflow: hidden;
+}
+
+.pattern-intro-right-desktop,
+.pattern-intro-left-desktop,
+.pattern-how-we-work-desktop,
+.pattern-footer-desktop {
+	position: absolute;
+	top: 0;
+	z-index: 0;
+	width: 40%;
+	height: 100%;
+}
+
+.pattern-intro-right-desktop {
+	top: -5%;
+	right: -17%;
+	height: 40%;
+	z-index: 2;
+}
+
+.pattern-intro-left-desktop {
+	top: 15%;
+	left: 0;
+	height: 40%;
+	z-index: 2;
+}
+
+.pattern-how-we-work-desktop {
+	right: 0;
+}
+
+.pattern-footer-desktop {
+	left: 0;
+	height: 60%;
+}
+
+.famaily-image {
+	max-width: 400px;
+	position: absolute;
+	top: 10%;
+	right: 10%;
+	z-index: 1;
 }
 
 /* ---------- attribution ---------- */
