@@ -150,7 +150,8 @@ header {
 }
 
 .section-one .title,
-.section-two .title {
+.section-two .title,
+.section-three .title {
 	padding-bottom: 1rem;
 	font-size: 3rem;
 	font-family: var(--dm-serif-display-fonts);
@@ -195,6 +196,23 @@ header {
 .section-two .service .icon {
 	width: 86px;
 	height: 86px;
+}
+
+.section-three {
+	margin-top: 7rem;
+}
+
+.section-three .container {
+	background: var(--dark-violet);
+	padding: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.section-three .title {
+	color: #fff;
+	letter-spacing: 2px;
 }
 
 /* ---------- attribution ---------- */
