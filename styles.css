@@ -50,13 +50,17 @@ body {
 
 /* --------- utility classes -------- */
 .container {
-	max-width: var(--desktop-size);
+	max-width: 1100px;
 	margin: auto;
 }
 
 .btn {
 	padding: 0.5rem 1rem;
 	text-transform: uppercase;
+}
+
+a.btn {
+	display: inline-block;
 }
 
 .btn-dark {
@@ -78,6 +82,20 @@ body {
 .btn-light:hover {
 	background: var(--light-gray);
 	color: var(--darker-violet) !important;
+}
+
+.line {
+	max-width: 250px;
+	height: 1px;
+	margin: 2rem 0;
+}
+
+.line-dark {
+	background: var(--dark-violet);
+}
+
+.line-light {
+	background: #fff;
 }
 
 /* ------------- header ------------- */
@@ -104,6 +122,7 @@ header {
 /* ----------- navbar links ---------- */
 .nav .nav--links {
 	display: flex;
+	align-items: center;
 	gap: 2rem;
 }
 
@@ -116,6 +135,42 @@ header {
 
 .nav--links .nav--link:hover {
 	color: var(--darker-violet);
+}
+
+/* ------------ sections ----------- */
+.sections {
+	position: relative;
+}
+
+.section-one {
+	background: var(--dark-violet);
+	color: #fff;
+	padding: 5rem 0;
+	position: relative;
+}
+
+.section-one .title {
+	padding-bottom: 1rem;
+	font-size: 3rem;
+	font-family: var(--dm-serif-display-fonts);
+	letter-spacing: 3px;
+	font-weight: 400;
+}
+
+.section-one .text {
+	padding-bottom: 2rem;
+}
+
+.section-one .image {
+	max-width: 500px;
+	position: absolute;
+	top: 7rem;
+	right: 250px;
+	z-index: 10;
+}
+
+.section-one .btn {
+	z-index: 9;
 }
 
 /* ---------- attribution ---------- */
