@@ -1,0 +1,147 @@
+/* ------------ patterns and family image ------------ */
+main,
+footer,
+.section-one .container,
+.section-three .container {
+	position: relative;
+	overflow: hidden;
+}
+
+.pattern-intro-right-mobile,
+.pattern-intro-left-mobile,
+.pattern-how-we-work-mobile,
+.pattern-footer-mobile {
+	display: none;
+}
+
+.pattern-intro-right-desktop,
+.pattern-intro-left-desktop,
+.pattern-how-we-work-desktop,
+.pattern-footer-desktop {
+	position: absolute;
+	top: 0;
+	z-index: 0;
+	width: 40%;
+	height: 100%;
+}
+
+.pattern-intro-right-desktop {
+	top: -5%;
+	right: -17%;
+	height: 40%;
+	z-index: 2;
+}
+
+.pattern-intro-left-desktop {
+	top: 15%;
+	left: 0;
+	height: 40%;
+	z-index: 2;
+}
+
+.pattern-how-we-work-desktop {
+	right: 0;
+}
+
+.pattern-footer-desktop {
+	left: 0;
+	height: 60%;
+}
+
+.famaliy-image {
+	max-width: 400px;
+	position: absolute;
+	top: 10%;
+	right: 10%;
+	z-index: 1;
+}
+
+.famaliy-image-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 980px) {
+	/* ------------ patterns and family image ------------ */
+	.pattern-intro-right-desktop,
+	.pattern-intro-left-desktop,
+	.pattern-how-we-work-desktop,
+	.pattern-footer-desktop {
+		display: none;
+	}
+
+	.pattern-intro-right-mobile,
+	.pattern-intro-left-mobile,
+	.pattern-how-we-work-mobile,
+	.pattern-footer-mobile {
+		display: block;
+		position: absolute;
+		width: 50%;
+	}
+
+	.pattern-intro-right-mobile {
+		top: 40%;
+		right: -30%;
+		height: 20%;
+		z-index: 2;
+	}
+
+	.pattern-intro-left-mobile {
+		display: none !important;
+	}
+
+	.pattern-how-we-work-mobile {
+		right: -25%;
+	}
+
+	.pattern-footer-mobile {
+		left: 0;
+		height: 60%;
+	}
+
+	.famaliy-image {
+		display: none;
+	}
+
+	.famaliy-image-mobile {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.pattern-intro-right-mobile {
+		top: 40%;
+		right: -20%;
+		height: 20%;
+		z-index: 2;
+	}
+
+	.pattern-how-we-work-mobile {
+		right: -20%;
+	}
+
+	.pattern-footer-mobile {
+		left: -5%;
+		top: -5%;
+		height: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.pattern-how-we-work-mobile {
+		right: -15%;
+	}
+
+	.pattern-footer-mobile {
+		left: -15%;
+		top: -10%;
+	}
+}
+
+@media screen and (max-width: 412px) {
+	.pattern-intro-right-mobile {
+		top: 40%;
+		right: -15%;
+		height: 15%;
+		z-index: 2;
+	}
+}

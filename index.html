@@ -10,6 +10,7 @@
 			href="./images/favicon-32x32.png"
 		/>
 		<link rel="stylesheet" href="./styles.css" />
+		<link rel="stylesheet" href="patterns.css" />
 		<title>Frontend Mentor | Insure landing page</title>
 	</head>
 	<body>
@@ -21,38 +22,67 @@
 				</a>
 
 				<!-- ------------- hamburger menu -------------- -->
-				<!-- TODO: create hamburger menu -->
+				<div class="hamburger-menu">
+					<img
+						src="./images/icon-hamburger.svg"
+						alt=""
+						class="icon-hamburger"
+					/>
+					<img src="./images/icon-close.svg" alt="" class="icon-close" />
+				</div>
 
 				<!-- ---------- navbar link ----------- -->
 				<ul class="nav--links">
 					<li><a href="" class="nav--link">How We Work</a></li>
 					<li><a href="" class="nav--link">Blog</a></li>
 					<li><a href="" class="nav--link">Account</a></li>
-					<li><a href="" class="nav--link btn btn-dark">View Plans</a></li>
+					<li>
+						<a href="" class="nav--link btn btn-dark">View Plans</a>
+						<a href="" class="nav--link btn btn-light">View Plans</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
 		<main>
-			<!-- patterns and family image -->
+			<!-- patterns desktop -->
 			<img
 				src="./images/bg-pattern-intro-left-desktop.svg"
-				alt="pattern how we work"
+				alt="pattern intro left desktop"
 				class="pattern-intro-left-desktop"
 			/>
 			<img
 				src="./images/bg-pattern-intro-right-desktop.svg"
-				alt="pattern how we work"
+				alt="pattern intro right desktop"
 				class="pattern-intro-right-desktop"
 			/>
+
+			<!-- ---------- intro/family image desktop ----------- -->
 			<img
 				src="./images/image-intro-desktop.jpg"
 				alt="image of family four people."
-				class="famaily-image"
+				class="famaliy-image"
+			/>
+			<!-- ---------- intro/family image mobile ----------- -->
+			<img
+				src="./images/image-intro-mobile.jpg"
+				alt="image of family four people."
+				class="famaliy-image-mobile"
 			/>
 
 			<section class="sections">
 				<!-- section one -->
 				<section class="section-one">
+					<!-- patterns mobile -->
+					<img
+						src="./images/bg-pattern-intro-left-mobile.svg"
+						alt="pattern intro left mobile"
+						class="pattern-intro-left-mobile"
+					/>
+					<img
+						src="./images/bg-pattern-intro-right-mobile.svg"
+						alt="pattern intro right mobile"
+						class="pattern-intro-right-mobile"
+					/>
 					<div class="container">
 						<div class="line line-light"></div>
 						<h1 class="title">
@@ -74,7 +104,7 @@
 				<section class="section-two">
 					<div class="container">
 						<div class="line line-dark"></div>
-						<h1 class="title">We're different</h1>
+						<h2 class="title">We're different</h2>
 						<div class="services">
 							<div class="service">
 								<img
@@ -119,10 +149,17 @@
 				<!-- section three -->
 				<section class="section-three">
 					<div class="container">
+						<!-- how we work pattern desktop -->
 						<img
 							src="./images/bg-pattern-how-we-work-desktop.svg"
-							alt="pattern how we work"
+							alt="pattern how we work desktop"
 							class="pattern-how-we-work-desktop"
+						/>
+						<!-- how we work mobile -->
+						<img
+							src="./images/bg-pattern-how-we-work-mobile.svg"
+							alt="pattern how we work mobile"
+							class="pattern-how-we-work-mobile"
 						/>
 						<h2 class="title">
 							Find out more <br />
@@ -136,10 +173,17 @@
 
 		<footer>
 			<section class="container">
+				<!-- footer pattern desktop -->
 				<img
 					src="./images/bg-pattern-footer-desktop.svg"
 					alt="pattern how we work"
 					class="pattern-footer-desktop"
+				/>
+				<!-- footer pattern mobile -->
+				<img
+					src="./images/bg-pattern-footer-mobile.svg"
+					alt="pattern how we work"
+					class="pattern-footer-mobile"
 				/>
 				<div class="top">
 					<a href="./" class="nav--logo">
@@ -210,5 +254,7 @@
 				>AmkaE</a
 			>.
 		</div>
+
+		<script src="./main.js"></script>
 	</body>
 </html>

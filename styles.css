@@ -125,6 +125,10 @@ header {
 	width: 100px;
 }
 
+.hamburger-menu {
+	display: none;
+}
+
 /* ----------- navbar links ---------- */
 .nav .nav--links {
 	display: flex;
@@ -141,6 +145,14 @@ header {
 
 .nav--links .nav--link:hover {
 	color: var(--darker-violet);
+}
+
+.nav--links .btn-dark {
+	display: inline-block;
+}
+
+.nav--links .btn-light {
+	display: none;
 }
 
 /* ------------ sections ----------- */
@@ -278,57 +290,6 @@ footer {
 	font-weight: bold;
 }
 
-/* ------------ patterns and family image ------------ */
-main,
-footer,
-.section-one .container,
-.section-three .container {
-	position: relative;
-	overflow: hidden;
-}
-
-.pattern-intro-right-desktop,
-.pattern-intro-left-desktop,
-.pattern-how-we-work-desktop,
-.pattern-footer-desktop {
-	position: absolute;
-	top: 0;
-	z-index: 0;
-	width: 40%;
-	height: 100%;
-}
-
-.pattern-intro-right-desktop {
-	top: -5%;
-	right: -17%;
-	height: 40%;
-	z-index: 2;
-}
-
-.pattern-intro-left-desktop {
-	top: 15%;
-	left: 0;
-	height: 40%;
-	z-index: 2;
-}
-
-.pattern-how-we-work-desktop {
-	right: 0;
-}
-
-.pattern-footer-desktop {
-	left: 0;
-	height: 60%;
-}
-
-.famaily-image {
-	max-width: 400px;
-	position: absolute;
-	top: 10%;
-	right: 10%;
-	z-index: 1;
-}
-
 /* ---------- attribution ---------- */
 .attribution {
 	padding: 1rem 0;
@@ -337,4 +298,160 @@ footer,
 .attribution a {
 	color: var(--grayish-blue);
 	text-decoration: underline;
+}
+
+/* --------- medeia queries --------- */
+@media screen and (max-width: 1180px) {
+	.famaily-image {
+		max-width: 300px;
+		top: 15%;
+		right: 3%;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	/* ------------- navbar ------------- */
+	.nav {
+		position: relative;
+	}
+
+	.hamburger-menu {
+		display: block;
+	}
+
+	.icon-hamburger {
+		display: block;
+	}
+
+	.icon-close {
+		display: none;
+	}
+
+	.nav .nav--links {
+		position: absolute;
+		top: 70px;
+		z-index: 100;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		flex-direction: column;
+		background: var(--darker-violet);
+		padding-top: 3rem;
+		display: none;
+	}
+
+	.nav--links .nav--link:hover {
+		color: var(--light-gray);
+	}
+
+	.nav--links .btn-dark {
+		display: none;
+	}
+
+	.nav--links .btn-light {
+		display: inline-block;
+	}
+
+	/* -------------- utils ------------- */
+	.hide {
+		display: none;
+	}
+
+	.show {
+		display: block;
+	}
+
+	.nav .flex {
+		display: flex;
+	}
+
+	footer {
+		padding: 1rem;
+	}
+
+	.attribution {
+		padding: 1rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.section-one {
+		padding: 2rem 0;
+		text-align: center;
+	}
+
+	.section-one .line {
+		margin: 1rem auto;
+	}
+
+	.section-one .title,
+	.section-two .title {
+		font-size: 2rem;
+	}
+
+	.section-two,
+	.section-three,
+	footer {
+		margin-top: 1rem;
+	}
+
+	.section-two .services .service {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		max-width: 500px;
+		margin: auto;
+	}
+
+	.section-three .container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 1.5rem;
+	}
+
+	.section-two .container h2 {
+		text-align: center;
+	}
+
+	.section-two .line {
+		margin: 2rem auto;
+	}
+
+	.section-two .services {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.section-three {
+		padding: 1.5rem;
+	}
+
+	.section-three .title {
+		font-size: 1.5rem;
+	}
+
+	footer {
+		padding-top: 2rem;
+	}
+
+	footer .top {
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	footer .footer-links {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.attribution {
+		text-align: center;
+	}
 }
