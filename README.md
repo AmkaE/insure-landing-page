@@ -12,9 +12,7 @@ This is a solution to the [Insure landing page challenge on Frontend Mentor](htt
   - [Built with](#built-with)
   - [Continued development](#continued-development)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
