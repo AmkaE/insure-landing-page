@@ -52,5 +52,6 @@ I'm looking forward building more project challenges from [Frontend Mentor](http
 
 ## Author
 
+- Website - [Amin Amka](https://aminamka.com)
 - GitHub - [AmkaE](https://github.com/AmkaE)
 - Frontend Mentor - [@AmkaE](https://www.frontendmentor.io/profile/AmkaE)
